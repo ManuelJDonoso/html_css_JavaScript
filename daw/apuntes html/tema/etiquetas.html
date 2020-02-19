@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>Document</title>
+        <style>
+        td{
+            border: 2px solid black;
+        }
+        </style>
+	</head>
+	<body>
+		<h1>ETIQUETAS</h1>
+		<ol>
+			<li><h2>display block</h2></li>
+			<table style="border: 1px solid black;">
+				<tr><td><h2>etiqueta</h2></td><td><h2>uso</h2></td><td><h2>Notas de uso:</h2></td></tr>
+				<tr>
+                    <tr><td colspan="3">Seccionamiento del contenido</td></tr>
+                    <td>address</td>
+                    <td>El elemento HTML &lt;address&gt; aporta información de contacto para su &lt;article> más cercano o ancestro &lt;body>; en el último caso lo aplica a todo el documento.</td>
+                    <td>
+                       <ul> <li>Para representar una dirección arbitraria, una que no esté relacionada con la información de contacto, utiliza un elemento &lt;p> en lugar del elemento &lt;address>.</li> 
+                        <li> Este elemento no debe contener más información que la información de contacto, como una fecha de publicación (que pertenece al elemento &lt;time>).</li> 
+                            <li> Normalmente un elemento &lt;address> puede ser colocado dentro del elemento &lt;footer> de la sección actual, si lo hay.</li> </td>
+                    </ul>
+                    </tr>
+				<tr>
+                        <td>article</td>
+                    <td><p>El <em>Elemento article de HTML</em> <span style="font-family: Courier New;">(&lt;article&gt;)</span> representa una composición auto-contenida en un documento, página, una aplicación o en el sitio, que se destina a distribuir de forma independiente o reutilizable, por ejemplo, en la sindicación. Podría ser un mensaje en un foro, un artículo de una revista o un periódico, una entrada de blog, un comentario de un usuario, un widget interactivo o gadget, o cualquier otro elemento independiente del contenido.</p></td>
+                    <td><ul>
+                        <li>Cuando los elementos <code>&lt;article&gt;</code> están anidados, los internos representan artículos relacionados con el exterior. Por ejemplo, los comentarios de un blog pueden ser elementos <code>&lt;article&gt;</code> anidados al que representa la entrada del blog.</li>
+                        <li>Los datos del autor de un elemento <code>&lt;article&gt;</code> pueden ser proporcionados a través del elemento <a href="/es/docs/Web/HTML/Elemento/address" title="El elemento HTML <address> aporta información de contacto para su <article> más cercano o ancestro <body>; en el último caso lo aplica a todo el documento."><code>&lt;address&gt;</code></a>, pero no se aplica a los elementos <code>&lt;article&gt;</code> anidados.</li>
+                        <li>La fecha de publicación y el tiempo de un elemento <code>&lt;article&gt;</code> pueden ser descritos con el atributo <code><a rel="nofollow" class="new" title="La página aún no se ha creado.">pubdate</a></code> atributo de un elemento <a href="/es/docs/Web/HTML/Elemento/time" title="El elemento HTML <time> representa un periodo específico en el tiempo. Puede incluir el atributo datetime para convertir las fechas en un formato interno que usa un ordenador, mejorando así los resultados en los motores de búsqueda o características personalizadas como los recordatorios."><code>&lt;time&gt;</code></a>.</li>
+                       </ul>    </td>
+                </tr>
+				<tr>
+                    <td>aside</td>
+                    <td><p><span class="goog-gtc-unit" id="goog-gtc-unit-3"><span class="goog-gtc-from-human goog-gtc-translatable" dir="ltr">El <strong>elemento HTML <code>&lt;aside&gt;</code></strong> representa una sección de una página que consiste en contenido que está indirectamente relacionado con el contenido principal del documento.</span></span> <span class="goog-gtc-unit" id="goog-gtc-unit-4"><span class="goog-gtc-from-human goog-gtc-translatable" dir="ltr">Estas secciones son a menudo representadas como barras laterales o como inserciones y contienen una explicación al margen como una definición de glosario, elementos relacionados indirectamente, como publicidad, la biografía del autor, o en aplicaciones web, la información de perfil o enlaces a blogs relacionados.</span></span></p></td>
+                    <td> <ul>
+                        <li><span class="goog-gtc-unit" id="goog-gtc-unit-6"><span class="goog-gtc-from-human goog-gtc-translatable" dir="ltr">No utilices el elemento <code>&lt;aside&gt;</code> para etiquetar texto entre paréntesis, ya que este tipo de texto se considera parte del flujo principal.</span></span></li>
+                       </ul>    </td>
+                </tr>
+                <tr>
+                    <td>footer</td>
+                    <td><p style="margin-top: 0px; margin-right: 0px; margin-bottom: 1.286em; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 0px;">El <em>Elemento </em><em>HTML Footer</em>&nbsp;(<span style="font-family: 'Courier New';">&lt;footer&gt;</span>) representa un pie de página para el contenido de sección más cercano o el elemento &nbsp;<a rel="internal" href="/en/Sections_and_Outlines_of_an_HTML5_document#sectioning_root" style="color: rgb(51, 102, 153); text-decoration: none;">raíz de sección</a>&nbsp;(p.e, su ancestro mas cercano&nbsp;<code style="font-style: inherit; font-weight: inherit; font: normal normal normal 100%/normal 'Courier New', 'Andale Mono', monospace;"><a rel="internal" class="new" style="color: rgb(153, 0, 0); text-decoration: none;" title="La página aún no se ha creado.">&lt;article&gt;</a></code>,&nbsp;<code style="font-style: inherit; font-weight: inherit; font: normal normal normal 100%/normal 'Courier New', 'Andale Mono', monospace;"><a rel="internal" class="new" style="color: rgb(153, 0, 0); text-decoration: none;" title="La página aún no se ha creado.">&lt;aside&gt;</a></code>,&nbsp;<code style="font-style: inherit; font-weight: inherit; font: normal normal normal 100%/normal 'Courier New', 'Andale Mono', monospace;"><a rel="internal" class="new" style="color: rgb(153, 0, 0); text-decoration: none;" title="La página aún no se ha creado.">&lt;nav&gt;</a></code>,&nbsp;<code style="font-style: inherit; font-weight: inherit; font: normal normal normal 100%/normal 'Courier New', 'Andale Mono', monospace;"><a rel="internal" class="new" style="color: rgb(153, 0, 0); text-decoration: none;" title="La página aún no se ha creado.">&lt;section&gt;</a></code>,<code style="font-style: inherit; font-weight: inherit; font: normal normal normal 100%/normal 'Courier New', 'Andale Mono', monospace;"><a rel="internal" class="new" style="color: rgb(153, 0, 0); text-decoration: none;" title="La página aún no se ha creado.">&lt;blockquote&gt;</a></code>,&nbsp;<code style="font-style: inherit; font-weight: inherit; font: normal normal normal 100%/normal 'Courier New', 'Andale Mono', monospace;"><a rel="internal" class="new" style="color: rgb(153, 0, 0); text-decoration: none;" title="La página aún no se ha creado.">&lt;body&gt;</a></code>,&nbsp;<code style="font-style: inherit; font-weight: inherit; font: normal normal normal 100%/normal 'Courier New', 'Andale Mono', monospace;"><a rel="internal" class="new" style="color: rgb(153, 0, 0); text-decoration: none;" title="La página aún no se ha creado.">&lt;details&gt;</a></code>,&nbsp;<code style="font-style: inherit; font-weight: inherit; font: normal normal normal 100%/normal 'Courier New', 'Andale Mono', monospace;"><a rel="internal" class="new" style="color: rgb(153, 0, 0); text-decoration: none;" title="La página aún no se ha creado.">&lt;fieldset&gt;</a></code>,&nbsp;<code style="font-style: inherit; font-weight: inherit; font: normal normal normal 100%/normal 'Courier New', 'Andale Mono', monospace;"><a rel="internal" class="new" style="color: rgb(153, 0, 0); text-decoration: none;" title="La página aún no se ha creado.">&lt;figure&gt;</a></code>,&nbsp;<code style="font-style: inherit; font-weight: inherit; font: normal normal normal 100%/normal 'Courier New', 'Andale Mono', monospace;"><a rel="internal" class="new" style="color: rgb(153, 0, 0); text-decoration: none;" title="La página aún no se ha creado.">&lt;td&gt;</a></code>). Un pie de página típicamente contiene información acerca de el autor de la sección, datos de derechos de autor o enlaces a documentos relacionados.</p></td>
+                    <td><ul style="margin-top: 0px; margin-right: 0px; margin-bottom: 1.286em; margin-left: 0px; padding-top: 0px; padding-right: 0px; padding-bottom: 0px; padding-left: 22px; list-style-type: disc;">
+                        <li>Encierra la información acerca del autor en un elemento&nbsp;<code style="font-style: inherit; font-weight: inherit; font: normal normal normal 100%/normal 'Courier New', 'Andale Mono', monospace;"><a rel="internal" class="new" style="color: rgb(153, 0, 0); text-decoration: none;" title="La página aún no se ha creado.">&lt;address&gt;</a></code>&nbsp;que puede ser incluido dentro del elemento&nbsp;<span style="font-family: 'Courier New';">&lt;footer&gt;.</span></li>
+                        <li>El &nbsp;elemento&nbsp;<span style="font-family: 'Courier New';">&lt;footer&gt;</span>&nbsp;no es contenido de sección y en consecuencia no introduce una nueva sección en el&nbsp;<a rel="internal" href="/en/Sections_and_Outlines_of_an_HTML5_document" style="color: rgb(51, 102, 153); text-decoration: none;">esquema</a>.</li>
+                       </ul></td>
+                </tr>
+                <tr>
+                    <td>header</td>
+                    <td><p>El <em>elemento de HTML Header</em> (<span style="font-family: Courier New;">&lt;header&gt;</span>) representa un grupo de ayudas introductorias o de navegación. Puede contener algunos elementos de encabezado, así como&nbsp;también un logo, un&nbsp;formulario de búsqueda, un nombre de autor y otros componentes.</p></td>
+                    <td><ul>
+                        <li>El elemento <span style="font-family: Courier New;">&lt;header&gt;</span> no es contenido de sección y, por lo tanto, no introduce una nueva sección en <a href="/en/Sections_and_Outlines_of_an_HTML5_document" title="en/Sections and Outlines of an HTML5 document">descripción</a>.</li>
+                       </ul></td>
+                </tr>
+                <tr>
+					<td>h1 -h6</td>
+				</tr>
+                <tr>
+                    <td>main</td>
+                    <td><p>El <strong>elemento</strong> <strong>HTML <code>&lt;main&gt;</code> </strong>representa el contenido principal del <a href="/es/docs/Web/HTML/Elemento/body" title="El Elemento HTML <body> representa el contenido de un documento HTML. Sólo puede haber un elemento <body> en un documento."><code>&lt;body&gt;</code></a> de un documento o aplicación. El área principal del contenido consiste en el contenido que está directamente relacionado, o se expande sobre el tema central de un documento o la funcionalidad central de una aplicación. Este contenido debe ser único al documento, excluyendo cualquier contenido que se repita a través de un conjunto de documentos como barras laterales, enlaces de navegación, información de derechos de autor, logos del sitio y formularios de búsqueda (a menos, claro, que la función principal del documento sea un formulario de búsqueda).</p></td>
+                    <td><p><strong>Nota:</strong> <strong>no debe haber</strong> más de un elemento <code>&lt;main&gt;</code> en un documento, y este <strong>no debe ser</strong> descendiente de un elemento&nbsp; <a href="/es/docs/Web/HTML/Elemento/article" title="El Elemento article de HTML (<article>) representa una composición auto-contenida en un documento, página, una aplicación o en el sitio, que se destina a distribuir de forma independiente o reutilizable, por ejemplo, en la sindicación. Podría ser un mensaje en un foro, un artículo de una revista o un periódico, una entrada de blog, un comentario de un usuario, un widget interactivo o gadget, o cualquier otro elemento independiente del contenido."><code>&lt;article&gt;</code></a>, <a href="/es/docs/Web/HTML/Elemento/aside" title="El Elemento HTML Aside  (<aside>) representa una sección de una página que consiste en contenido que está tangencialmente relacionado con el contenido que le rodea, que podría ser considerado independiente de ese contenido. Estas secciones son a menudo representadas como barras laterales o como inserciones y contienen una explicación al margen como una definición de glosario, elementos relacionados indirectamente, como publicidad, la biografía del autor, o en aplicaciones web, la información de perfil o enlaces a blogs relacionados."><code>&lt;aside&gt;</code></a>, <a href="/es/docs/Web/HTML/Elemento/footer" title="El Elemento HTML Footer&nbsp;(<footer>) representa un pie de página para el contenido de sección más cercano o el elemento &nbsp;raíz de sección&nbsp;(p.e, su ancestro mas cercano&nbsp;<article>,&nbsp;<aside>,&nbsp;<nav>,&nbsp;<section>,<blockquote>,&nbsp;<body>,&nbsp;<details>,&nbsp;<fieldset>,&nbsp;<figure>,&nbsp;<td>). Un pie de página típicamente contiene información acerca de el autor de la sección, datos de derechos de autor o enlaces a documentos relacionados."><code>&lt;footer&gt;</code></a>, <a href="/es/docs/Web/HTML/Elemento/header" title="El elemento de HTML Header (<header>) representa un grupo de ayudas introductorias o de navegación. Puede contener algunos elementos de encabezado, pero también otros elementos como un logo, una sección que aglutine secciones de encabezados, una formulario de búsqueda o cosas parecidas."><code>&lt;header&gt;</code></a>, o <a href="/es/docs/Web/HTML/Elemento/nav" title="Descripción"><code>&lt;nav&gt;</code></a>.</p></td>
+                    </tr>
+                    <tr>
+                        <td>nav</td>
+                        <td><p>Su <em>text</em>o para el algoritmo de estructura es el texto del primer elemento de encabezado HTML de más alto rango (ip.ej., el primer <a rel="nofollow" class="new" title="La documentación acerca de este tema no ha sido escrita todavía . ¡Por favor  considera contribuir !"><code>&lt;h1&gt;</code></a>, <a href="/es/docs/Web/HTML/Elemento/h2" title="REDIRECT h1 [es]"><code>&lt;h2&gt;</code></a>, <a href="/es/docs/Web/HTML/Elemento/h3" title="REDIRECT h1 [es]"><code>&lt;h3&gt;</code></a>, <a href="/es/docs/Web/HTML/Elemento/h4" title="REDIRECT h1 [es]"><code>&lt;h4&gt;</code></a>, <a href="/es/docs/Web/HTML/Elemento/h5" title="REDIRECT h1 [es]"><code>&lt;h5&gt;</code></a> o <a href="/es/docs/Web/HTML/Elemento/h6" title="REDIRECT h1 [es]"><code>&lt;h6&gt;</code></a> con el número más pequeño entre sus descendientes) y el <em>rango</em> es el rango del mismo elemento de encabezado HTML.</p></td>
+                    </tr>
+                    <tr>
+                        <td>section</td>
+                        <td><p>El elemento de <em>HTML section</em> (<code>&lt;section&gt;</code>) representa una sección genérica de un documento. Sirve para determinar qué contenido corresponde a qué parte de un esquema. Piensa en el esquema como en el índice de contenido de un libro; un tema común y subsecciones relacionadas.&nbsp; Es, por lo tanto, una etiquéta semántica. Su funcionalidad principal es estructurar semánticamente un documento a la hora de ser representado por parte de un agente usuario. Por ejemplo, un agente de usuario que represente el documento en voz, podría exponer al usuario el índice de contenido por niveles para navegar rápidamente por las distintas partes.</p></td>
+                        <td><ul>
+                            <li>Si la intención es sindicar el contenido de un elemento <a href="/es/docs/Web/HTML/Elemento/section" title="El elemento de HTML section (<section>) representa una sección genérica de un documento. Sirve para determinar qué contenido corresponde a qué parte de un esquema. Piensa en el esquema como en el índice de contenido de un libro; un tema común y subsecciones relacionadas.&nbsp; Es, por lo tanto, una etiquéta semántica. Su funcionalidad principal es estructurar semánticamente un documento a la hora de ser representado por parte de un agente usuario. Por ejemplo, un agente de usuario que represente el documento en voz, podría exponer al usuario el índice de contenido por niveles para navegar rápidamente por las distintas partes."><code>&lt;section&gt;</code></a> , es mejor usar el elemento <a href="/es/docs/Web/HTML/Elemento/article" title="El Elemento article de HTML (<article>) representa una composición auto-contenida en un documento, página, una aplicación o en el sitio, que se destina a distribuir de forma independiente o reutilizable, por ejemplo, en la sindicación. Podría ser un mensaje en un foro, un artículo de una revista o un periódico, una entrada de blog, un comentario de un usuario, un widget interactivo o gadget, o cualquier otro elemento independiente del contenido."><code>&lt;article&gt;</code></a> en su lugar, a modo de artículos independientes como en las revistas. <a href="/es/docs/Web/HTML/Elemento/section" title="El elemento de HTML section (<section>) representa una sección genérica de un documento. Sirve para determinar qué contenido corresponde a qué parte de un esquema. Piensa en el esquema como en el índice de contenido de un libro; un tema común y subsecciones relacionadas.&nbsp; Es, por lo tanto, una etiquéta semántica. Su funcionalidad principal es estructurar semánticamente un documento a la hora de ser representado por parte de un agente usuario. Por ejemplo, un agente de usuario que represente el documento en voz, podría exponer al usuario el índice de contenido por niveles para navegar rápidamente por las distintas partes."><code>&lt;section&gt;</code></a> está diseñado para contenidos dependientes, pero diferenciados.</li>
+                            <li>No se debe usar el elemento <a href="/es/docs/Web/HTML/Elemento/section" title="El elemento de HTML section (<section>) representa una sección genérica de un documento. Sirve para determinar qué contenido corresponde a qué parte de un esquema. Piensa en el esquema como en el índice de contenido de un libro; un tema común y subsecciones relacionadas.&nbsp; Es, por lo tanto, una etiquéta semántica. Su funcionalidad principal es estructurar semánticamente un documento a la hora de ser representado por parte de un agente usuario. Por ejemplo, un agente de usuario que represente el documento en voz, podría exponer al usuario el índice de contenido por niveles para navegar rápidamente por las distintas partes."><code>&lt;section&gt;</code></a> como un mero contenedor genérico; para esto ya existe <a href="/es/docs/Web/HTML/Elemento/div" title="div de &quot;division&quot; -división . Sirve para crear secciones o agrupar contenidos."><code>&lt;div&gt;</code></a>, especialmente si el objetivo solamente es aplicar un estilo (CSS) a la sección. Como regla general, el título de una sección debería aparecer en el esquema del documento.</li>
+                           </ul></td>
+                    </tr>
+                    <tr><td colspan="3">Contenido del texto</td></tr>
+				<tr>
+                    <td>blockquote</td>
+                    <td>cita en bloque . Crea citas en bloque, marca las citas a otros autores o documentos.</td>
+                </tr>
+                <tr>
+                    <td>dd</td>
+                    <td><p><span class="seoSummary">El <strong>elemento HTML <code>&lt;dd&gt;</code> </strong>provee detalles acerca de o la definición de un término precedente (<a href="/es/docs/Web/HTML/Elemento/dt" title="El&nbsp; elemento HTML <dt> especifica un término en una descripción o lista de definiciones, y como tal debe utilizarse dentro de un elemento <dl>"><code>&lt;dt&gt;</code></a>) en una lista de descripciones (<a href="/es/docs/Web/HTML/Elemento/dl" title="El elemento HTML <dl>&nbsp; representa una lista descriptiva. El elemento encierra una lista de grupos de términos (especificados con el uso del elemento <dt>) y de descripciones (proveídas con elementos <dd>). Algunos usos comunes para este elemento son implementar un glosario o para desplegar metadatos (lista de pares llave-valor)."><code>&lt;dl&gt;</code></a>).</span></p></td>
+                </tr>
+                <tr>
+                    <td>div</td>
+                    <td>div de "division" -división . Sirve para crear secciones o agrupar contenidos.</td>
+				</tr>
+                <tr>
+                    <td>dl</td>
+                    <dt><p>El elemento <strong>HTML <code>&lt;dl&gt;</code>&nbsp; </strong>representa una lista descriptiva. El elemento encierra una lista de grupos de términos (especificados con el uso del elemento <a href="/es/docs/Web/HTML/Elemento/dt" title="El&nbsp; elemento HTML <dt> especifica un término en una descripción o lista de definiciones, y como tal debe utilizarse dentro de un elemento <dl>"><code>&lt;dt&gt;</code></a>) y de descripciones (proveídas con elementos <a href="/es/docs/Web/HTML/Elemento/dd" title="El elemento HTML <dd> provee detalles acerca de o la definición de un término precedente (<dt>) en una lista de descripciones (<dl>)."><code>&lt;dd&gt;</code></a>). Algunos usos comunes para este elemento son implementar un glosario o para desplegar metadatos (lista de pares llave-valor).</p></dt>
+				</tr>
+				<tr>
+                    <td>dt</td>
+                    <td><p><span class="seoSummary">El&nbsp; <strong>elemento HTML <code>&lt;dt&gt;</code> </strong>especifica un término en una descripción o lista de definiciones, y como tal debe utilizarse dentro de un elemento <a href="/es/docs/Web/HTML/Elemento/dl" title="El elemento HTML <dl>&nbsp; representa una lista descriptiva. El elemento encierra una lista de grupos de términos (especificados con el uso del elemento <dt>) y de descripciones (proveídas con elementos <dd>). Algunos usos comunes para este elemento son implementar un glosario o para desplegar metadatos (lista de pares llave-valor)."><code>&lt;dl&gt;</code></a></span> Es usualmente seguido por un elemento <a href="/es/docs/Web/HTML/Elemento/dd" title="El elemento HTML <dd> provee detalles acerca de o la definición de un término precedente (<dt>) en una lista de descripciones (<dl>)."><code>&lt;dd&gt;</code></a>; sin embargo, múltiples elementos <code>&lt;dt&gt;</code>&nbsp; en un renglón indican diferentes términos los cuales todos son definidos por el siguiente elemento <a href="/es/docs/Web/HTML/Elemento/dd" title="El elemento HTML <dd> provee detalles acerca de o la definición de un término precedente (<dt>) en una lista de descripciones (<dl>)."><code>&lt;dd&gt;</code></a>.</p></td>
+				</tr>
+			
+			
+				
+				
+			
+				<tr>
+                    <td>figcaption</td>
+                    <td><p>El elemento&nbsp;<strong>HTML <code>&lt;figcaption&gt;</code>&nbsp;&nbsp;</strong>representa un subtítulo o leyenda asociado&nbsp;al contenido del elemento padre&nbsp;<a href="/es/docs/Web/HTML/Elemento/figure" title="El  elemento HTML <figure> representa contenido independiente, a menudo con un título. Si bien se relaciona con el flujo principal, su posición es independiente de éste. Por lo general, se trata de una imagen, una ilustración, un diagrama, un fragmento de código, o un esquema al que se hace referencia en el texto principal, pero que se puede mover a otra página o a un apéndice sin que afecte al flujo principal."><code>&lt;figure&gt;</code></a>, pudiendo ser colocado como primer o último hijo. Es importante destacar que el elemento&nbsp;<strong><code>&lt;figcaption&gt;</code></strong>&nbsp;es opcional.</p></td>
+				</tr>
+				<tr>
+                    <td>figure</td>
+                    <td><p><span class="goog-gtc-unit" id="goog-gtc-unit-2"><span class="goog-gtc-from-human goog-gtc-translatable" dir="ltr">El <em> elemento HTML</em> <span style="font-family: Courier New;">&lt;figure&gt;</span> representa contenido independiente, a menudo con un título.</span></span> <span class="goog-gtc-unit" id="goog-gtc-unit-3"><span class="goog-gtc-from-human goog-gtc-translatable" dir="ltr">Si bien se relaciona con el flujo principal, su posición es independiente de éste.</span></span> <span class="goog-gtc-unit" id="goog-gtc-unit-4"><span class="goog-gtc-from-human goog-gtc-translatable" dir="ltr">Por lo general, se trata de una imagen, una ilustración, un diagrama, un fragmento de código, o un esquema al que se hace referencia en el texto principal, pero que se puede mover a otra página o a un apéndice sin que afecte al flujo principal.</span></span></p></td>
+                    <td><ul>
+                        <li><span class="goog-gtc-unit" id="goog-gtc-unit-6"><span class="goog-gtc-from-human goog-gtc-translatable" dir="ltr">Al ser una <a href="/es/Secciones_y_esquema_de_un_documento_HTML_5#Seccionador_ra.c3.adz" title="https://developer.mozilla.org/es/Secciones_y_esquema_de_un_documento_HTML_5#Seccionador_ra.c3.adz">seccionador raíz</a>, el esbozo del contenido del elemento <span style="font-family: Courier New;">&lt;figure&gt;</span> está excluido del esbozo principal del documento.</span></span></li>
+                        <li><span class="goog-gtc-unit" id="goog-gtc-unit-7"><span class="goog-gtc-from-mt goog-gtc-translatable" dir="ltr">Un título puede estar asociado con el elemento <span style="font-family: Courier New;">&lt;figure&gt;</span> mediante la inserción de un <a href="/es/docs/Web/HTML/Elemento/figcaption" title="El elemento&nbsp;HTML <figcaption>&nbsp;&nbsp;representa un subtítulo ( content ) o leyenda asociada el contenido de the <figure> element al cual está&nbsp;anidado, pudiendo ser colocado como&nbsp;&nbsp;the first o last child de the <figure> element, &nbsp;es importante destacar que the&nbsp;<figcaption>&nbsp;element es opcional"><code>&lt;figcaption&gt;</code></a> en su interior (como el primero o el último hijo).</span></span></li>
+                       </ul></td>
+                </tr>
+	
+				<tr>
+					<td>form</td>
+				</tr>
+				<tr>
+					<td>fieldset</td>
+				</tr>
+				
+				<tr>
+                    <td>hr</td>
+                    <td><p><span class="comment">descripción de uno o dos párrafos</span>El <strong>elemento HTML &lt;hr&gt; </strong>representa un cambio de tema entre párrafos (por ejemplo, un cambio de escena en una historia, un cambio de tema en una sección). En versiones previas de HTML representaba una línea horizontal. Aún puede ser representada como una línea horizontal en los navegadores visuales, pero ahora es definida en términos semánticos y no tanto en términos representativos, por tanto para dibujar una línea horizontal se debería usar el CSS apropiado.</p></td>
+				</tr>
+				<tr>
+					<td>li</td>
+				</tr>
+                <tr>
+                    <td>canvas</td>
+                    <td>El elemento HTML canvas  se puede utilizar para dibujar gráficos a través de secuencias de comandos (por lo general JavaScript ). Por ejemplo, puede usarse para dibujar gráficos, hacer composiciones de fotos o incluso realizar animaciones</td>
+				</tr>
+				
+				<tr>
+                    <td>noscript</td>
+                    <td>noscript de -no script . Aporta contenidos alternativos al elemento script. las aplicaciones de usuario que no soporten scripts deben mostrar en su lugar el contenido de este elemento.    </td>
+				</tr>
+				<tr>
+					<td>ol</td>
+				</tr>
+				<tr>
+					<td>output</td>
+				</tr>
+				<tr>
+					<td>p</td>
+				</tr>
+				<tr>
+					<td>pre</td>
+				</tr>
+				
+				<tr>
+					<td>table</td>
+				</tr>
+				<tr>
+					<td>tfoot</td>
+				</tr>
+				<tr>
+					<td>ul</td>
+				</tr>
+				<tr>
+					<td>video</td>
+				</tr>
+			</table>
+
+			<ul>
+				<li>address</li>
+				<li>article</li>
+				<li>asiide</li>
+				<li>blockquote</li>
+				<li>canvas</li>
+				<li>dd</li>
+				<li>div</li>
+				<li>dl</li>
+				<li>dt</li>
+				<li>fieldset</li>
+				<li>figcaption</li>
+				<li>figure</li>
+				<li>footer</li>
+				<li>form</li>
+				<li>h1 -h6</li>
+				<li>header</li>
+				<li>hr</li>
+				<li>li</li>
+				<li>main</li>
+				<li>nav</li>
+				<li>noscript</li>
+				<li>ol</li>
+				<li>output</li>
+				<li>p</li>
+				<li>pre</li>
+				<li>section</li>
+				<li>table</li>
+				<li>tfoot</li>
+				<li>ul</li>
+				<li>video</li>
+			</ul>
+			<li><h2>con display inline</h2></li>
+			<ul>
+				<li>a</li>
+				<li>abbr</li>
+				<li>acronym</li>
+				<li>b</li>
+				<li>bdo</li>
+				<li>big</li>
+				<li>br</li>
+				<li>button</li>
+				<li>cite</li>
+				<li>code</li>
+				<li>dfn</li>
+				<li>em</li>
+				<li>i</li>
+				<li>img</li>
+				<li>input</li>
+				<li>kdb</li>
+				<li>label</li>
+				<li>map</li>
+				<li>object</li>
+				<li>q</li>
+				<li>samp</li>
+				<li>script</li>
+				<li>select</li>
+				<li>small</li>
+				<li>span</li>
+				<li>strong</li>
+				<li>sub</li>
+				<li>sup</li>
+				<li>textarea</li>
+				<li>time</li>
+				<li>tt</li>
+				<li>var</li>
+			</ul>
+		</ol>
+	</body>
+</html>

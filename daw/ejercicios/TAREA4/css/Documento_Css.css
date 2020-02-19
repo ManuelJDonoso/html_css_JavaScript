@@ -1,0 +1,376 @@
+.contenedor{
+    
+    width:1000px;
+    margin: auto;
+
+  
+}
+
+@font-face{
+	font-family: KaushanScript-Regular;
+	font-style:normal;
+	font-weight:normal;
+	src:url(../font/KaushanScript-Regular.ttf);
+}
+
+/*  -----Cabecera-------
+Margen superior e inferior de 20px.
+Ancho de 1000px.
+Alto de 120px.
+Logo:
+Ancho de 200px.
+Alto de 60px.
+Tamaño de fuente: 50px.
+Tipo letra: KaushanScript-Regular.ttf
+Alineación vertical.
+Redes sociales:
+Tres cajas circulares: azul (facebook), verde (twitter) y rojo (youtube).
+Alto y ancho de 42px.
+Logotipos con Fontawesome en color blanco.
+*/
+.alin1{
+    height: 120px;
+    font-family: KaushanScript-Regular ;
+    font-size: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+
+    
+}
+.logo{
+    width: 200px;
+   
+}
+.redes{
+   display: flex;
+  
+}
+.azul, .verde, .rojo{
+    font-size:42px;
+    margin-right:10px;
+    width: 50px;
+    color: white;
+    text-align: center;
+   
+        }
+.azul{
+       background-color: blue;
+       border-radius: 100%;
+    }
+.verde{
+    background-color:green;
+    border-radius: 100%;
+    }
+.rojo{
+    background-color:red;
+    border-radius: 100%;
+    }
+
+    /*
+    Barra de navegación.
+    Margen superior e inferior de 20px.
+    Alto de 48px.
+    Ancho de 1000px.
+    Cinco botones con margen horizontal de 2px, cada uno:
+    Alto de 48px.
+    Ancho de 196px.
+    Tipo letra: sans-serif (color blanco).
+    Fondo: #6400ff
+    Fondo cuando pasa el ratón: #6400ff con opacidad (40 por ciento).
+    */
+
+    .alin2{
+        margin-bottom:20px;
+        margin-top:20px;
+        width:1000px;
+        height:48px;
+        display: flex;
+    }
+    
+    .boton{
+        margin-left:2px;
+        margin-right:2px;
+        width:196px;
+        height:48px;
+        font-family: sans-serif;
+        color:white;
+        background-color:#6400ff;
+    }
+    .boton:hover{
+        opacity:0.4;
+    }
+/*
+Tres cajas con imágenes:
+Alto de 192px.
+Ancho de 1000px.
+Margen superior e inferior de 20px.
+Disponemos de varios elemento:
+Imágenes:
+Alto de 100px.
+Ancho de 100px.
+Forma redonda.
+Título:
+Tamaño fuente: 28px.
+Tipo de fuente: KaushanScript-Regular.ttf
+Párrafo:
+Tamaño de fuente: 14px.
+Tipo de fuente: sans-serif.
+Márgenes de 10px.
+*/
+.alin3{
+	width:1000px;
+	height:192px;
+	margin-top:20px;
+	margin-bottom:20px;
+   
+    display: flex;
+    text-align: center;
+    
+  
+
+}
+
+.imagen1{
+	width:100px;
+	height:100px;
+	border-radius: 100px;
+}
+.titulo1{
+	font-family:KaushanScript-Regular;
+	font-size:28px;
+}
+.parrafo1{
+	font-family: sans-serif;
+	font-size:14px;
+    margin:10px;
+   
+}
+figcaption{
+  
+}
+
+/*
+Sección:
+Márgenes superior e inferior de 20px.
+Alto de 453px.
+Ancho de 1000px.
+Compuesta por:
+Columna izquierda con 5 enlaces:
+Ancho de 200px.
+Alto de 453px.
+Color de fondo: #aaa
+Margen interior: 10px.
+Margen horizontal de 2px.
+Margen vertical de 10px.*/
+
+.alin4{
+    width:1000px;
+	height:453px;
+	margin-top:20px;
+	margin-bottom:20px;   
+    display: flex;
+}
+.enlaces{
+    width:200px;
+	height:453px;
+}
+.items{
+    width:200px;
+    height:45px;
+    padding-top: 10px;
+    
+	margin-top:10px;
+	margin-right:10px;
+	margin-left:2px;
+	background-color:#aaa;
+}
+.enl{
+    margin: 10px;
+}
+/*
+Artículo (medio):
+Ancho de 600px.
+Alto de 453px.
+Título:
+Tamaño de fuente: 40px
+Tipo de fuente: KaushanScript-Regular.ttf
+Márgenes 20px.
+Imagen
+Tamaño: 300x200px.
+Margen derecho 10px.
+Párrafo:
+Tamaño de fuente: 16px.
+Tipo de fuente: sans-serif.
+Alineación texto: justificado.
+Margen vertical de 5px.
+Margen derecho de 20px.
+Margen izquierdo de 0px;
+*/
+.alin5{
+    width:600px;
+	height:453px;
+}
+.titulo2{
+    font-size: 40px;
+    font-family: kaushanScript-Regular;
+    margin-top:20px;
+    margin-right:20px;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    text-align: center;
+}
+
+.t_imagen{
+    
+    text-align:justify;
+    font-family: sans-serif;
+    font-size: 16px;
+    margin-top:5px;
+    margin-right:20px;
+    margin-left: 10px;
+}
+.ima2{
+    width:300px;
+    height:200px;
+    margin-right: 10px;
+    float: left;
+    
+}
+
+
+/*
+columna a la derecha:
+Ancho de 200px.
+Alto de 453px.
+Compuesto por:
+Encabezado: INICIAR
+Color del texto: #fff
+Color de fondo: #6400ff
+Ancho de 200px.
+Alto de 50px.
+Margen inferior: 5px.
+Formulario:
+Campo de tipo texto.
+Campo de tipo contraseña.
+Campo de tipo email.
+Estos campos tienen:
+Ancho de 176px.
+Margen interno de 10px.
+Margen vertical de 5px.
+Margen horizontal de 0px.
+Los iconos del placeholder deben ser Fontawesome.
+Botón de enviar
+Ancho: 40 por ciento.
+Color de fondo: #640064
+Margen horizontal del 30 por ciento.
+*/
+
+.alin6{
+	width:200px;
+	height:453px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content:center ;
+
+   
+    
+    
+
+
+}
+
+.iniciar{
+	color:#fff;
+	background-color:#6400ff;
+	width:200px;
+	height:50px;
+    margin-bottom:5px;
+    text-align: center;
+   
+}
+
+
+.formu{
+	width:176px;
+	margin-top:5px;
+	margin-bottom:5px;
+	padding:10px;
+}
+.enviar{
+width:40%;
+height: 30px;
+background-color: #640064;
+
+/* el color de la foto es  #B386B2*/
+margin-left:30%;
+}
+.formulario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.mover{
+	float:left;
+position:absolute;
+margin-top:15px;
+margin-left:10px;
+color: gray;
+
+}
+
+
+/*
+Pie de página:
+Margen vertical 20px.
+Ancho de 1000px.
+Alto de 70px.
+Fuente: sans-serif, color blanco.
+*/
+.alin7{
+	width:1000px;
+	height:70px;
+	color:white;
+	font-family: sans-serif;
+	margin-top:20px;
+	margin-bottom:20px;
+  padding-top: 20px;
+	background-color: #6400ff;
+  text-align:center;
+  align-content: center;
+
+}
+
+/*Ancho de 200px.
+Alto de 40px.
+Esquinas superiores (derecha e izquierda) redondeadas 20px.
+Posición fija y por encima de todos los elementos.
+Margen derecho de 50px.
+Texto: sans-serif, color blanco.
+Icono con Fontawesome.
+Color de fondo: #ff0064
+Fondo cuando pasa el ratón: #6400ff*/
+.chat{
+
+	width:200px;
+	height:40px;
+	border-top-left-radius: 20%;
+    border-top-right-radius: 20%;
+    margin-right:50px;
+    color:white;
+    font-family: sans-serif;
+	background-color:#ff0064;
+	
+
+
+        position:fixed;
+        bottom:0px;
+		right: 0px;
+
+	}
+	.chat:hover{
+
+	background-color:#6400ff;
+	}

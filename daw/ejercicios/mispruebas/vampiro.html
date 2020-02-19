@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script> 
+       function vampiro (nom,jug,clan,disciplina1,valor){
+           this.nombre=nom
+           this.jugugador=jug
+           this.clan=clan
+           new disciplina(disciplina1,valor)
+       }
+       function disciplina(nom,valor){
+        this.nombre_disciplina=nom
+        this.valor=valor
+       }
+       
+       var manu=new vampiro("mike","manuel","ventrue","depentacion",3)
+
+       alert(manu.disciplina.nombre_disciplina)   
+
+      /* for (x in manu) {
+          alert(manu[x])       
+       }*/
+       
+    </script>
+
+</head>
+<body>
+    
+</body>
+</html>

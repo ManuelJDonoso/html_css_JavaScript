@@ -1,0 +1,25 @@
+body{
+    margin: auto;
+}
+
+.tex_cent{
+    text-align: center;
+}
+.fondo{
+    background-color: #4c617c;
+    
+}
+.fondo_contenido{
+    background-color: #cfe2fb;
+}
+.element1{
+    height: 100px;
+}
+.alin1 {
+   
+    display: flex;
+  justify-content: space-around;
+    align-items: center;
+   
+    
+}
