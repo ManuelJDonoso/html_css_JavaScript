@@ -1,0 +1,62 @@
+
+	
+tr:nth-child(odd) {
+    background-color:hsl(192, 92%, 76%);
+}
+tr:nth-child(even) {
+    background-color:rgb(189, 252, 243);
+}
+.T_Titulo{
+    background-color: black;
+    color: white;
+    text-align: center;
+   
+}
+.T_subTitulo{
+    background-color: gray;
+    color: white;
+    text-align: center;
+  
+}
+table {
+    position: relative;
+    top: 150px;
+    width: 90%;
+    text-align: justify;
+    margin: auto;
+    border-spacing: 3px;
+    border-collapse: separate;
+}
+.centro{
+    text-align: center;
+  
+}
+.enlinea li{
+    display:inline;
+}
+td{
+    padding: 8px;
+  
+    
+
+}
+aside{
+
+    padding: 20px;
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    
+    z-index: 100;    
+   background-color: white;
+}
+.elemento2{
+    display: block;
+}
+.menu:before{
+    display: block;
+    content: " ";
+    margin-top: -1200px;
+    height: 120px;
+    visibility: hidden;
+}

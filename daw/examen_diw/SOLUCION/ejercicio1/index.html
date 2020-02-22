@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Archivos CSS BOOTSTRAP 4 -->
+    <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- Archivos CSS PERSONALIZADOS -->
+    <link type="text/css" rel="stylesheet" href="css/estilos-avanza.css">
+
+    <title>Examen Febrero @Avanza</title>
+</head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-12 text-center">
+                <a href="#"><img class="img-fluid" alt="cabecera-avanza" src="images/cabecera.png"></a>
+                <h1>Diseño de Interfaces Web</h1>
+                <p> Nombre y Apellidos</p>
+            </div>
+            <!-- ENCABEZADO -->
+            <header id="encabezado" class="col-12 caja-principal">
+                <div class="row">
+                    <div class="col-12">
+                        <h2>1. Encabezado</h2>
+                    </div>
+                    <div class="col-sm-2 col-12 caja-secundaria">
+                        <span><a href="#">1.1. Logotipo</a></span>
+                    </div>
+                    <div class="col-sm-7 col-8 caja-secundaria">
+                        <span>1.2. Barra de navegación</span>
+                    </div>
+                    <div class="col-sm-3 col-4 caja-secundaria">
+                        <span>1.3. Herramientas</span>
+                    </div>
+                </div>
+            </header>
+            <section id="Seccion" class="col-lg-9 col-12 caja-principal">
+                <div class="row">
+                    <div class="col-12">
+                        <h2>2. Sección</h2>
+                    </div>
+                    <div class="col-12 caja-secundaria d-sm-flex d-none">
+                        <span>2.1 Imagen Sección</span>
+                    </div>
+                    <div class="col-12 caja-secundaria">
+                        <span>2.2 Texto Sección</span>
+                    </div>
+                </div>
+            </section>
+            <div id="anuncio1" class="col-3 d-lg-flex d-none anuncio-exterior">
+                <span>ANUNCIO</span>
+            </div>
+            <section id="Articulos" class="col-lg-9 col-12 caja-principal">
+                <div class="row">
+                    <div class="col-12">
+                        <h2>3. Artículos</h2>
+                    </div>
+                    <div class="col-lg-3 col-sm-9 col-12 caja-secundaria">
+                        <span>3.1. Imagen artículo</span>
+                    </div>
+                    <div id="anuncio2" class="col-sm-3 col-12 d-lg-none d-flex anuncio">
+                        <span>ANUNCIO</span>
+                    </div>
+                    <div class="col-lg-9 col-12 caja-secundaria caja-grande">
+                        <span>3.2. Texto artículo</span>
+                    </div>
+                </div>
+            </section>
+            <section id="enlaces" class="col-lg-3 caja-principal d-sm-inline d-none">
+                <div class="row">
+                    <div class="col-12">
+                        <h2>4. Enlaces</h2>
+                    </div>
+                    <div class="col-12 caja-secundaria caja-grande">
+                        <span>4.1. Texto enlaces</span>
+                    </div>
+                </div>
+            </section>
+            <footer id="pie-pagina" class="col-12 caja-principal">
+                <div class="row">
+                    <div class="col-12">
+                        <h2>5. Pie de página</h2>
+                    </div>                   
+                </div>
+            </footer>
+        </div>
+    </div>
+
+    <!-- 
+        Archivos Javascript: JQUERY, POPPER, BOOTSTRAP 
+          -> El orden es importante: 
+              (1) jquery-3.4.1.min.js
+              (2) popper.min.js
+              (3) bootstrap.min.js
+              (4) ... (otros JS)
+    -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/popper.min.js"></script> <!-- componente dropdown y tooltip -->
+    <script src="js/bootstrap.min.js"></script>
+</body></html>
